@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.環境変数の設定 · Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document</title>
+        <title>9.audioserveの起動と可視化表示 · Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -63,10 +63,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chpt0400.html" />
     
-    
-    <link rel="prev" href="chpt0200.html" />
+    <link rel="prev" href="chpt0800.html" />
     
 
     </head>
@@ -147,7 +145,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="chpt0300.html">
+        <li class="chapter " data-level="1.5" data-path="chpt0300.html">
             
                 <a href="chpt0300.html">
             
@@ -225,7 +223,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="chpt0900.html">
+        <li class="chapter active" data-level="1.11" data-path="chpt0900.html">
             
                 <a href="chpt0900.html">
             
@@ -268,7 +266,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >3.環境変数の設定</a>
+        <a href="../.." >9.audioserveの起動と可視化表示</a>
     </h1>
 </div>
 
@@ -283,10 +281,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="3&#x74B0;&#x5883;&#x5909;&#x6570;&#x306E;&#x8A2D;&#x5B9A;">3.&#x74B0;&#x5883;&#x5909;&#x6570;&#x306E;&#x8A2D;&#x5B9A;</h1>
-<ul>
-<li>&#x7279;&#x306B;&#x306A;&#x3057;</li>
-</ul>
+                                <h1 id="9audioserve&#x306E;&#x8D77;&#x52D5;&#x3068;&#x53EF;&#x8996;&#x5316;&#x8868;&#x793A;">9.audioserve&#x306E;&#x8D77;&#x52D5;&#x3068;&#x53EF;&#x8996;&#x5316;&#x8868;&#x793A;</h1>
+<p>audioserve&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#xFF08;&#x4F8B;&#xFF09;&#x3092;&#x4EE5;&#x4E0B;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3002;</p>
+<h3 id="synerex-proxy&#x8D77;&#x52D5;&#xFF08;&#x4F8B;&#xFF09;">Synerex Proxy&#x8D77;&#x52D5;&#xFF08;&#x4F8B;&#xFF09;</h3>
+<pre><code>./proxy -nodesrv 192.168.207.165:9990 -channel 19 -verbose
+</code></pre><h2 id="audioserve&#x306E;&#x8D77;&#x52D5;">audioserve&#x306E;&#x8D77;&#x52D5;</h2>
+<p>&#x65B0;&#x3057;&#x3044;&#x30BF;&#x30FC;&#x30DF;&#x30CA;&#x30EB;&#x3092;&#x958B;&#x304D;&#x4EE5;&#x4E0B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;</p>
+<pre><code>&#xFF08;&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#xFF1A;python_provider_grideye&#xFF09;
+$ python receiveSupply.py
+</code></pre><h2 id="webpage-server&#x306E;&#x8D77;&#x52D5;">webpage server&#x306E;&#x8D77;&#x52D5;</h2>
+<p>&#x65B0;&#x3057;&#x3044;&#x30BF;&#x30FC;&#x30DF;&#x30CA;&#x30EB;&#x3092;&#x958B;&#x304D;&#x4EE5;&#x4E0B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;</p>
+<pre><code>&#xFF08;&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#xFF1A;python_provider_grideye&#xFF09;
+$ cd client/build
+$ python -m http.sever
+</code></pre><h2 id="&#x53EF;&#x8996;&#x5316;&#x8868;&#x793A;">&#x53EF;&#x8996;&#x5316;&#x8868;&#x793A;</h2>
+<p>&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3092;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;URL&#x306B;&#x300C;127.0.0.1:8000&#x300D;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;</p>
+<p>&#x8868;&#x793A;&#x304C;&#x5207;&#x308A;&#x66FF;&#x308F;&#x3089;&#x306A;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x524D;&#x9805;&#x300C;webpage server&#x300D;&#x3092;ctrl+c&#x3067;&#x4E00;&#x5EA6;&#x505C;&#x6B62;&#x3057;&#x3001;&#x518D;&#x5EA6;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x8868;&#x793A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308B;&#x3002;</p>
+<p><img src="../img/0900/browse.png" alt="img"></p>
 
                                 
                                 </section>
@@ -314,14 +325,10 @@
 
             
                 
-                <a href="chpt0200.html" class="navigation navigation-prev " aria-label="Previous page: 2.前提条件">
+                <a href="chpt0800.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 8.audioserveのインストール">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="chpt0400.html" class="navigation navigation-next " aria-label="Next page: 4.Pulse Audio モジュールのインストール">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -330,7 +337,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.環境変数の設定","level":"1.5","depth":1,"next":{"title":"4.Pulse Audio モジュールのインストール","level":"1.6","depth":1,"path":"src/md/chpt0400.md","ref":"src/md/chpt0400.md","articles":[]},"previous":{"title":"2.前提条件","level":"1.4","depth":1,"path":"src/md/chpt0200.md","ref":"src/md/chpt0200.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/chpt0300.md","mtime":"2021-12-06T06:50:56.259Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-07T06:18:22.865Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.audioserveの起動と可視化表示","level":"1.11","depth":1,"previous":{"title":"8.audioserveのインストール","level":"1.10","depth":1,"path":"src/md/chpt0800.md","ref":"src/md/chpt0800.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/chpt0900.md","mtime":"2021-12-07T06:12:04.594Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-07T06:18:22.865Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

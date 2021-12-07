@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.環境変数の設定 · Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document</title>
+        <title>7.Pulse Audio データの可視化概要 · Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -63,10 +63,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chpt0400.html" />
+    <link rel="next" href="chpt0800.html" />
     
     
-    <link rel="prev" href="chpt0200.html" />
+    <link rel="prev" href="chpt0600.html" />
     
 
     </head>
@@ -147,7 +147,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="chpt0300.html">
+        <li class="chapter " data-level="1.5" data-path="chpt0300.html">
             
                 <a href="chpt0300.html">
             
@@ -199,7 +199,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="chpt0700.html">
+        <li class="chapter active" data-level="1.9" data-path="chpt0700.html">
             
                 <a href="chpt0700.html">
             
@@ -268,7 +268,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >3.環境変数の設定</a>
+        <a href="../.." >7.Pulse Audio データの可視化概要</a>
     </h1>
 </div>
 
@@ -283,10 +283,75 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="3&#x74B0;&#x5883;&#x5909;&#x6570;&#x306E;&#x8A2D;&#x5B9A;">3.&#x74B0;&#x5883;&#x5909;&#x6570;&#x306E;&#x8A2D;&#x5B9A;</h1>
-<ul>
-<li>&#x7279;&#x306B;&#x306A;&#x3057;</li>
-</ul>
+                                <h1 id="7pulse-audio-&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53EF;&#x8996;&#x5316;&#x6982;&#x8981;">7.Pulse Audio &#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53EF;&#x8996;&#x5316;&#x6982;&#x8981;</h1>
+<p>&#x524D;&#x7AE0;&#x3067;&#x8A18;&#x3057;&#x305F;Pulse Audio&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x3001;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306B;&#x3066;&#x53EF;&#x8996;&#x5316;&#x3059;&#x308B;&#x300C;audioserve&#x300D;&#x306B;&#x3064;&#x3044;&#x3066;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3002;</p>
+<p>audioserve&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x6A5F;&#x5668;&#x306F;&#x3001;&#x30E9;&#x30BA;&#x30D1;&#x30A4;&#x3001;synerex&#x4EE5;&#x5916;&#x306E;&#x6A5F;&#x5668;&#x306B;&#x304A;&#x3044;&#x3066;&#x3082;&#x52D5;&#x4F5C;&#x304C;&#x53EF;&#x80FD;&#x3002;</p>
+<p>&#xFF08;&#x69CB;&#x6210;&#x56F3;&#x306E;&#x8CBC;&#x4ED8;&#x4E88;&#x5B9A;&#xFF09;</p>
+<p>audioserve&#x5B9F;&#x884C;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x524D;&#x63D0;&#x6761;&#x4EF6;&#x3092;&#x4EE5;&#x4E0B;&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<h2 id="&#x5FC5;&#x8981;&#x306A;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;">&#x5FC5;&#x8981;&#x306A;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">#</th>
+<th>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;</th>
+<th>&#x5099;&#x8003;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td>yarn</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td>python3.x</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td>synerex/provider_proxy</td>
+<td><a href="https://github.com/synerex/provider_proxy" target="_blank">https://github.com/synerex/provider_proxy</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5FC5;&#x8981;&#x306A;python-3-&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;">&#x5FC5;&#x8981;&#x306A;Python 3 &#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">#</th>
+<th>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;</th>
+<th>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x65B9;&#x6CD5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td>grpcio-tools</td>
+<td>pip install grpcio-tools</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td>futures</td>
+<td>pip install futures</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td>protobuf3</td>
+<td>pip install protobuf3</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td>opencv-contrib-python</td>
+<td>pip install opencv-contrib-python</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td>websockets</td>
+<td>pip install websockets</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -314,12 +379,12 @@
 
             
                 
-                <a href="chpt0200.html" class="navigation navigation-prev " aria-label="Previous page: 2.前提条件">
+                <a href="chpt0600.html" class="navigation navigation-prev " aria-label="Previous page: 6.Pulse Audio モジュールの実行結果">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="chpt0400.html" class="navigation navigation-next " aria-label="Next page: 4.Pulse Audio モジュールのインストール">
+                <a href="chpt0800.html" class="navigation navigation-next " aria-label="Next page: 8.audioserveのインストール">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -330,7 +395,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.環境変数の設定","level":"1.5","depth":1,"next":{"title":"4.Pulse Audio モジュールのインストール","level":"1.6","depth":1,"path":"src/md/chpt0400.md","ref":"src/md/chpt0400.md","articles":[]},"previous":{"title":"2.前提条件","level":"1.4","depth":1,"path":"src/md/chpt0200.md","ref":"src/md/chpt0200.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/chpt0300.md","mtime":"2021-12-06T06:50:56.259Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-07T06:18:22.865Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.Pulse Audio データの可視化概要","level":"1.9","depth":1,"next":{"title":"8.audioserveのインストール","level":"1.10","depth":1,"path":"src/md/chpt0800.md","ref":"src/md/chpt0800.md","articles":[]},"previous":{"title":"6.Pulse Audio モジュールの実行結果","level":"1.8","depth":1,"path":"src/md/chpt0600.md","ref":"src/md/chpt0600.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/chpt0700.md","mtime":"2021-12-07T05:35:18.023Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-07T06:18:22.865Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
