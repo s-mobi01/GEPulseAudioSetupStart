@@ -16,8 +16,7 @@
 
 * [7.Pulse Audio データの可視化概要](src/md/chpt0700.md)
 
-* [8.audioserveのインストール](src/md/chpt0800.md)
+* [8.audio_serverのインストール](src/md/chpt0800.md)
 
-* [9.audioserveの起動と可視化表示](src/md/chpt0900.md)
-
+* [9.audio_serverの起動と可視化表示](src/md/chpt0900.md)
 
