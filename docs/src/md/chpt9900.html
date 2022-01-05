@@ -302,10 +302,10 @@
 <h3 id="&#x30FB;&#x5B9A;&#x7FA9;&#x5185;&#x5BB9;">&#x30FB;&#x5B9A;&#x7FA9;&#x5185;&#x5BB9;</h3>
 <pre><code>[
   {
-    &quot;name&quot;: &quot;conference room&quot;,      // &#x30D7;&#x30EB;&#x30C0;&#x30A6;&#x30F3;&#x8868;&#x793A;&#x540D;
+    &quot;name&quot;: &quot;conference room&quot;,      // &#x30D7;&#x30EB;&#x30C0;&#x30A6;&#x30F3;&#x8868;&#x793A;&#x540D;&#xFF08;&#x30A8;&#x30EA;&#x30A2;&#x540D;&#xFF09;
     &quot;devices&quot;: [0, 1, 2, 3],        // &#x8868;&#x793A;&#x3059;&#x308B;Grid-Eye&#x756A;&#x53F7;&#xFF08;GE-xx&#xFF09;
     &quot;hostName&quot;: &quot;raspitoi1&quot;,        // Grid-Eye&#x3092;&#x63A5;&#x7D9A;&#x3057;&#x3066;&#x3044;&#x308B;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x540D;&#xFF08;&#x30E9;&#x30BA;&#x30D1;&#x30A4;&#x540D;&#xFF09;
-    &quot;isWall&quot;: false,                // Grid-Ey&#x8A2D;&#x7F6E;&#x65B9;&#x6CD5;&#xFF08;true:&#x58C1;&#x8A2D;&#x7F6E;  false:&#x5929;&#x4E95;&#x8A2D;&#x7F6E;&#xFF09;
+    &quot;isWall&quot;: false,                // Grid-Eye&#x8A2D;&#x7F6E;&#x65B9;&#x6CD5;&#xFF08;true:&#x58C1;&#x8A2D;&#x7F6E;  false:&#x5929;&#x4E95;&#x8A2D;&#x7F6E;&#xFF09;
     &quot;rotate&quot;: [0, 0, 0, 0],         // &#x56DE;&#x8EE2;&#x8868;&#x793A;&#x8A2D;&#x5B9A;&#xFF08;0:&#x56DE;&#x8EE2;&#x8868;&#x793A;&#x306A;&#x3057; +1&#x6BCE;&#x306B;90&#x5EA6;&#x56DE;&#x8EE2;&#xFF09;
                                     //   &#x203B;devices&#x306E;&#x914D;&#x5217;&#x756A;&#x53F7;&#x3068;&#x5BFE;&#x5FDC;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x540C;&#x6570;&#x306E;&#x914D;&#x5217;&#x304C;&#x5FC5;&#x8981;
                                     //
@@ -323,7 +323,7 @@
   }
 ]
 </code></pre><p>&#x7DE8;&#x96C6;&#x306F;&#x3001;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x7B49;&#x3067;&#x884C;&#x3046;&#x3002;</p>
-<p><strong>&#x5185;&#x5BB9;&#x5909;&#x66F4;&#x5F8C;&#x306F;&#x3001;webpage server&#x3092;&#x4E00;&#x5EA6;&#x505C;&#x6B62;&#x3057;&#x305F;&#x5F8C;&#x306B;&#x3001;&#x7AE0;&#x300C;8.audio_server&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x300D;&#x30FC;&#x300C;&#x30D3;&#x30EB;&#x30C9;&#x300D;&#x306B;&#x5F93;&#x3044;&#x30EA;&#x30D3;&#x30EB;&#x30C9;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x3002;</strong></p>
+<p><u><strong>&#x5185;&#x5BB9;&#x5909;&#x66F4;&#x5F8C;&#x306F;&#x3001;webpage server&#x3092;&#x4E00;&#x5EA6;&#x505C;&#x6B62;&#x3057;&#x305F;&#x5F8C;&#x306B;&#x3001;&#x7AE0;&#x300C;8.audio_server&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x300D;&#x30FC;&#x300C;&#x30D3;&#x30EB;&#x30C9;&#x300D;&#x306B;&#x5F93;&#x3044;&#x30EA;&#x30D3;&#x30EB;&#x30C9;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x3002;</strong></u></p>
 <h2 id="synerex-proxy&#x8D77;&#x52D5;&#xFF08;&#x4F8B;&#xFF09;">Synerex Proxy&#x8D77;&#x52D5;&#xFF08;&#x4F8B;&#xFF09;</h2>
 <p>audio_server&#x8D77;&#x52D5;&#x6642;&#x306B;&#x3059;&#x3067;&#x306B;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x4E0D;&#x8981;&#x3002;</p>
 <pre><code>$ ./proxy -nodesrv 192.168.207.165:9990 -channel 19 -verbose
@@ -338,8 +338,13 @@ $ python grideye_server.py
 $ cd client/out
 $ python -m http.server
 </code></pre><h2 id="&#x53EF;&#x8996;&#x5316;&#x8868;&#x793A;">&#x53EF;&#x8996;&#x5316;&#x8868;&#x793A;</h2>
-<p>&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3092;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;URL&#x306B;&#x300C;127.0.0.1:8000&#x300D;&#x3092;&#x5165;&#x529B;&#x3057;&#x3059;&#x308B;&#x3002;</p>
-<p>&#x8868;&#x793A;&#x4E2D;&#x306E;&#x30D7;&#x30EB;&#x30C0;&#x30A6;&#x30F3;&#x304B;&#x3089;&#x4EFB;&#x610F;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x3092;&#x9078;&#x629E;&#x3057;&#x300C;send&#x300D;&#x30AD;&#x30FC;&#x3092;&#x62BC;&#x4E0B;&#x3059;&#x308B;&#x3002;</p>
+<ol>
+<li><p>&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3092;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;URL&#x306B;&#x300C;127.0.0.1:8000&#x300D;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;</p>
+</li>
+<li><p>&#x30D7;&#x30EB;&#x30C0;&#x30A6;&#x30F3;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x4EFB;&#x610F;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;</p>
+</li>
+<li>&#x300C;send&#x300D;&#x30AD;&#x30FC;&#x3092;&#x62BC;&#x4E0B;&#x3059;&#x308B;&#x3002;</li>
+</ol>
 <p><img src="../img/0900/browse.png" alt="img"></p>
 
                                 
@@ -380,7 +385,7 @@ $ python -m http.server
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"付録.grideye_server（温度可視化モジュール）について","level":"1.12","depth":1,"previous":{"title":"9.audio_serverの起動と可視化表示","level":"1.11","depth":1,"path":"src/md/chpt0900.md","ref":"src/md/chpt0900.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/chpt9900.md","mtime":"2021-12-23T08:04:33.338Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-23T08:06:05.611Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"付録.grideye_server（温度可視化モジュール）について","level":"1.12","depth":1,"previous":{"title":"9.audio_serverの起動と可視化表示","level":"1.11","depth":1,"path":"src/md/chpt0900.md","ref":"src/md/chpt0900.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/chpt9900.md","mtime":"2022-01-05T07:35:25.338Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-05T07:39:08.277Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
